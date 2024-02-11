@@ -35,6 +35,10 @@ main {
     padding: 20px 20px 50px 20px;
     margin: auto;
 }
+main > img {
+    width: 100%;
+    padding: 5px;
+}
 
 p#desc {
     text-align: center;
@@ -94,20 +98,23 @@ strong {
     color: #237e4c;
 }
 
-div#blackboard{
+div.video{
     background-color: #1a5c38;
-    max-width: 840px;
-    height: 400px;
     margin: auto;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 800px;
+    padding-bottom: 45%;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.250);
+    position: relative;
 }
 
-div#vid{
-    width: fit-content;
-    height: 0px;
-    padding: 50px 0px;
-    margin: auto;
-    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 div#extra{
